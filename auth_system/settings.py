@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from datetime import timedelta
 from pathlib import Path
-
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -189,3 +189,4 @@ MEDIA_URL = '/media/'
 
 AUTH_USER_MODEL = 'account.UserAccount'
 
+django_heroku.settings(locals())
