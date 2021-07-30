@@ -26,7 +26,7 @@ SECRET_KEY = '7io0q-u-u3c70r%)fad^8p^52txj8gi6ns32*9^&le9n()a5dh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dzoxygen-api.herokuapp.com']
+ALLOWED_HOSTS = ['dzoxygen-api.herokuapp.com','dzoxygen.herokuapp.com']
 
 
 # Application definition
@@ -102,6 +102,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    'dzoxygen.herokuapp.com',
 ]
 ROOT_URLCONF = 'auth_system.urls'
 
