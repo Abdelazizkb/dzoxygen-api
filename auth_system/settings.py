@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django_filters',
 ]
 
+DOMAIN='dzoxygen.herokuapp.com'
+
 DJOSER = {
     'LOGIN_FIELD': 'email',
     'USER_CREATE_PASSWORD_RETYPE': True,
